@@ -1,0 +1,9 @@
+/* CSS 선택자(Selector) */
+
+* {
+  color : red;
+}
+
+p {
+  color : blue;
+}
