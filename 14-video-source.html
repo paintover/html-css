@@ -9,12 +9,26 @@
 
 <body>
   <video class="fullsize" poster="video/poster.jpg" controls autoplay muted>
+    <!-- 자동재생 속성 넣을 거면, muted도 접근성 측면에서 넣어야 함 -->
     <source src="video/google-developer-stories.mp4" type="video/mp4" />
     <source src="video/google-developer-stories.mov" type="video/mov" />
     <source src="video/google-developer-stories.ogg" type="video/ogg" />
     <source src="video/google-developer-stories.webm" type="video/webm" />
     <track src="video/google-developer-stories-subtitles-en.vtt" kind="captions" srclang="en" label="English Caption" />
   </video>
+  <iframe aria-label="대체텍스트 맞추기 퀴즈" width="560" height="315"
+    src="https://www.youtube.com/embed/DXvCZBVMSRw?si=slNpc33ElUlIW73a" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <br />
+  <figure>
+    <div class="iframe-container iframe16">
+      <iframe class="fullsize" width="560" height="315" title="웹접근성과 웹표준 개념" frameborder="0" allowfullscreen
+        src="https://www.youtube.com/embed/fUcIe7-2zxw"></iframe>
+    </div>
+  </figure>
+
+  <!-- 비디오를 불러오는 방법 : video 태그 or iframe 태그 -->
 </body>
 
 </html>
